@@ -1,0 +1,97 @@
+.header {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: right;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+/* BRAND: grid 2 kolom — kiri logo, kanan title+tagline */
+.brand {
+  display: grid;
+  grid-template-columns: auto 1fr;   /* ~setengah-setengah */
+  grid-template-rows: auto auto;
+  align-items: center;
+  gap: 0.25rem 0.75rem;
+  line-height: 1.1;
+  text-decoration: none;
+  color: var(--color-foreground);
+}
+
+/* LOGO kotak rounded, FE di tengah */
+.logo {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;                 /* logo span 2 baris */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-page-bg);
+  border-radius: 10px;             /* agak rounded */
+  min-width: 56px;                 /* bikin terasa besar */
+  min-height: 48px;
+  padding: 4px 10px;
+  font-weight: 800;
+  font-size: 1.25rem;              /* besar */
+  letter-spacing: .5px;
+}
+
+/* TITLE di kanan logo, baris 1 */
+.title {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: .2px;
+  white-space: nowrap;
+}
+
+/* TAGLINE di kanan logo, baris 2 */
+.tagline {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  font-size: 0.82rem;
+  opacity: 0.85;
+}
+
+/* NAV */
+.nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.nav a {
+  color: var(--color-foreground);
+  text-decoration: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.5rem;
+  opacity: 0.9;
+  transition: background-color .2s ease, opacity .2s ease;
+}
+
+.nav a:hover,
+.nav a:focus {
+  background-color: rgba(255, 255, 255, 0.12);
+  opacity: 1;
+  outline: none;
+}
+
+/* Responsif */
+@media (max-width: 640px) {
+  .brand { grid-template-columns: 56px 1fr; } /* jaga proporsi */
+  .title { font-size: 1rem; }
+  .tagline { display: none; }
+  .nav { gap: 0.5rem; }
+}
