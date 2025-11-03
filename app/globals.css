@@ -1,42 +1,66 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Palette extracted from your image */
+  --earth-900: #0f090b; /* coal */
+  --earth-800: #1d1513; /* dark roast */
+  --earth-700: #2d231a; /* espresso */
+  --earth-600: #4b3d30; /* umber */
+  --earth-500: #756e5e; /* taupe */
+  --earth-400: #938d7f; /* greige */
+
+  /* App tokens (you can remap these anytime) */
+  --color-background: var(--earth-800);   /* navbar/header/background global */
+  --color-foreground: #f6f7fb;            /* text on dark bg */
+
+  --color-page-bg: var(--earth-400);      /* body background */
+  --color-page-fg: #f6f7fb;               /* body text */
+
+  /* Extras for components */
+  --surface: var(--earth-600);            /* cards/sections */
+  --surface-contrast: #f6f7fb;
+  --border: var(--earth-500);             /* borders/lines */
+  --muted: var(--earth-400);              /* muted text/icons */
+
+  --font-sans: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue",
+               Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  --header-height: 56px;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --color-background: var(--earth-800);
+    --color-foreground: #ffffff;
+    --color-page-bg: var(--earth-700);
+    --color-page-fg: #ffffff;
   }
-}
+} */
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  padding: 0;
+}
+
+html, body { height: 100%; }
+
+body {
   margin: 0;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-page-bg);
+  color: var(--color-page-fg);
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  padding-top: var(--header-height);
+}
+
+main { 
+  flex: 1 0 auto; 
+  border-top: 100svh;
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
+a:hover { text-decoration: underline; }
