@@ -1,0 +1,173 @@
+.profilePage {
+  min-height: calc(100vh - var(--header-height));
+  padding: 32px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* halaman agak gelap supaya nyatu dengan header/card */
+  background-color: var(--earth-700);
+}
+
+/* Kartu utama */
+.profileCard {
+  background-color: var(--earth-800);   /* sedikit lebih gelap dari page */
+  border-radius: 22px;
+  overflow: hidden;
+  color: var(--color-foreground);
+  border: 1px solid var(--earth-700);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Cover atas kartu */
+.cover {
+  position: relative;
+  height: 150px;
+  background: linear-gradient(
+    135deg,
+    var(--earth-600),
+    var(--earth-800)
+  );
+}
+
+/* Avatar bulat di tengah */
+.avatar {
+  position: absolute;
+  left: 50%;
+  bottom: -48px;
+  transform: translateX(-50%);
+  width: 96px;
+  height: 96px;
+  border-radius: 999px;
+  background: var(--earth-900);
+  border: 3px solid var(--earth-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatarIcon {
+  font-size: 2.4rem;
+  color: var(--color-foreground);
+}
+
+/* Body kartu */
+.cardBody {
+  padding: 64px 24px 24px;
+  background: var(--earth-800);
+}
+
+/* Identity (nama + role) */
+.identityRow {
+  margin-bottom: 20px;
+}
+
+.nameBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fullName {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--color-foreground);
+}
+
+.username {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.roleCol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 6px;
+}
+
+.role {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+@media (max-width: 768px) {
+  .roleCol {
+    align-items: flex-start;
+    margin-top: 12px;
+  }
+}
+
+/* Detail Email / Minat / Bergabung */
+.detailsRow {
+  margin-top: 24px;
+  row-gap: 12px;
+}
+
+.detailItem {
+  background: var(--earth-700);        /* panel sedikit lebih terang */
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  padding: 12px 14px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.detailLabel {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.detailValue {
+  font-size: 0.95rem;
+  color: var(--color-foreground);
+  word-break: break-word;
+}
+
+/* Baris tombol bawah */
+.actionsRow {
+  margin-top: 24px;
+}
+
+.actionsRowButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+/* Tombol Settings (utama) */
+.settingsButton {
+  border-radius: 0.6rem;
+  font-weight: 600;
+  background-color: var(--earth-600);
+  border-color: var(--earth-600);
+  color: var(--surface-contrast);
+  padding-inline: 1.4rem;
+}
+
+.settingsButton:hover,
+.settingsButton:focus {
+  background-color: var(--earth-700);
+  border-color: var(--earth-700);
+}
+
+/* Tombol Subscription (outline) */
+.subscriptionButton {
+  border-radius: 0.6rem;
+  font-weight: 500;
+  background-color: transparent;
+  border: 1px solid var(--earth-600);
+  color: var(--color-foreground);
+  padding-inline: 1.4rem;
+}
+
+.subscriptionButton:hover,
+.subscriptionButton:focus {
+  background-color: var(--earth-700);
+  border-color: var(--earth-700);
+}
