@@ -42,7 +42,7 @@ const newsData = [
     category: "Bisnis",
     date: new Date("2025-10-07"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr1.jpg",
+    image: "/images/gmbr1.jpg",
     link: "detail.html?id=artikel-8"
   },
   {
@@ -50,273 +50,273 @@ const newsData = [
     category: "Bisnis",
     date: new Date("2025-10-07"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr2.jpg"
+    image: "/images/gmbr2.jpg"
   },
   {
     title: "The Papandayan Jazz Fest 2025 Sukses Digelar",
     category: "Event",
     date: new Date("2025-10-07"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr3.jpg"
+    image: "/images/gmbr3.jpg"
   },
   {
     title: "KPK Periksa Dewan Pembina Gaphura dalam Kasus Kuota Haji",
     category: "Hukum",
     date: new Date("2025-10-07"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr4.jpg"
+    image: "/images/gmbr4.jpg"
   },
   {
     title: "Nonton Rangga & Cinta Sambil Belajar Sejarah Reformasi",
     category: "Entertainment",
     date: new Date("2025-10-07"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr5.jpg"
+    image: "/images/gmbr5.jpg"
   },
   {
     title: "Dana Reses Anggota DPR Dikabarkan Naik Menjadi Rp 756 Juta",
     category: "Politik",
     date: new Date("2025-10-07"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr6.jpg"
+    image: "/images/gmbr6.jpg"
   },
   {
     title: "Kementerian Investasi: Belum Ada Perusahaan yang Minat Lanjutkan Proyek DME",
     category: "Bisnis",
     date: new Date("2025-10-07"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr7.jpg"
+    image: "/images/gmbr7.jpg"
   },
   {
     title: "Menko Airlangga: Bankir Panas Dingin Usai Dapat Tambahan Dana Rp 200 Triliun",
     category: "Bisnis",
     date: new Date("2025-10-07"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr8.jpg"
+    image: "/images/gmbr8.jpg"
   },
   {
     title: "Marc Marquez Fokus Pemulihan, Absen di MotoGP Australia dan Malaysia",
     category: "Olahraga",
     date: new Date("2025-10-07"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr9.jpg"
+    image: "/images/gmbr9.jpg"
   },
   {
     title: "Gubernur Pramono Anung Bakal Terbitkan Obligasi Daerah",
     category: "Bisnis",
     date: new Date("2025-10-07"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr10.jpg"
+    image: "/images/gmbr10.jpg"
   },
   {
     title: "Shutdown AS Belum Ada Jalan Keluar, Gedung Putih Ancam PHK Massal",
     category: "Internasional",
     date: new Date("2025-10-07"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr11.jpg"
+    image: "/images/gmbr11.jpg"
   },
   {
     title: "PT Timah Penuhi Tuntutan Penambang Naikkan Harga Timah",
     category: "Bisnis",
     date: new Date("2025-10-06"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr12.jpg"
+    image: "/images/gmbr12.jpg"
   },
   {
     title: "Lomba Marathon eL Run 2025 di Bandung Berlangsung Meriah",
     category: "Event",
     date: new Date("2025-10-06"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr13.jpg"
+    image: "/images/gmbr13.jpg"
   },
   {
     title: "Headset XR Android Pertama Samsung Meluncur Akhir Oktober",
     category: "Teknologi",
     date: new Date("2025-10-06"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr14.jpg"
+    image: "/images/gmbr14.jpg"
   },
   {
     title: "Pakai Deepfake Wajah Supermodel, Sindikat Penipu Raup Rp64 Milir",
     category: "Teknologi",
     date: new Date("2025-10-06"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr15.jpeg"
+    image: "/images/gmbr15.jpeg"
   },
   {
     title: "Prabowo Perintahkan TNI Ikuti Perkembangan Teknologi dan AI",
     category: "Politik",
     date: new Date("2025-10-05"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr16.jpg"
+    image: "/images/gmbr16.jpg"
   },
   {
     title: "Hasil Balapan MotoGP Indonesia 2025: Fermin Aldeguer Jadi Pemenang, Marc Marquez Gagal Finis",
     category: "Olahraga",
     date: new Date("2025-10-05"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr17.jpg"
+    image: "/images/gmbr17.jpg"
   },
   {
     title: "Pertamina Akan Gunakan 100 Ribu Barel BBM Impor jika SPBU Swasta Ogah Beli",
     category: "Bisnis",
     date: new Date("2025-10-05"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr18.jpg"
+    image: "/images/gmbr18.jpg"
   },
   {
     title: "Seluk-beluk Tunjangan Pensiun untuk Mantan Anggota DPR",
     category: "Politik",
     date: new Date("2025-10-04"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr19.jpg"
+    image: "/images/gmbr19.jpg"
   },
   {
     title: "Luhut: Penyerapan Anggaran MBG Sudah Baik, Tak Perlu Ditarik",
     category: "Bisnis",
     date: new Date("2025-10-03"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr20.jpg"
+    image: "/images/gmbr20.jpg"
   },
   {
     title: "IHSG Akhir Pekan Ditutup Menguat seiring Bursa Kawasan Asia",
     category: "Bisnis",
     date: new Date("2025-10-03"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr21.jpg"
+    image: "/images/gmbr21.jpg"
   },
   {
     title: "Ini Target Innovillage 2025 Telkom University, Ada Tema Adopsi AI",
     category: "Teknologi",
     date: new Date("2025-10-02"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr22.jpg"
+    image: "/images/gmbr22.jpg"
   },
   {
     title: "SpaceX Targetkan Peluncuran Starship Ke-11 Pertengahan Oktober",
     category: "Teknologi",
     date: new Date("2025-10-01"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr23.jpg"
+    image: "/images/gmbr23.jpg"
   },
   {
     title: "Danantara Berencana Merger 16 BUMN Asuransi Menjadi 3",
     category: "Bisnis",
     date: new Date("2025-09-30"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr24.jpg"
+    image: "/images/gmbr24.jpg"
   },
   {
     title: "Prediksi Chelsea vs Benfica di Liga Champions Malam Ini",
     category: "Olahraga",
     date: new Date("2025-09-30"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr25.jpg"
+    image: "/images/gmbr25.jpg"
   },
   {
     title: "Tancap Gas Revisi Undang-Undang Sektor Keuangan",
     category: "Ekonomi",
     date: new Date("2025-09-30"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr26.jpg"
+    image: "/images/gmbr26.jpg"
   },
   {
     title: "Airlangga Mendukung Purbaya Tak Menaikkan Cukai Rokok Tahun Depan",
     category: "Bisnis",
     date: new Date("2025-09-30"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr27.jpg"
+    image: "/images/gmbr27.jpg"
   },
   {
     title: "Trump Tawarkan 21 Poin Rencana Perdamaian Gaza, Apa Isinya?",
     category: "Internasional",
     date: new Date("2025-09-29"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr28.jpg"
+    image: "/images/gmbr28.jpg"
   },
   {
     title: "Aktivitas Gunung Burni Telong Meningkat, Statusnya Jadi Waspada",
     category: "Lingkungan",
     date: new Date("2025-09-28"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr29.jpg"
+    image: "/images/gmbr29.jpg"
   },
   {
     title: "Tindak Lanjut Kasus Keracunan MBG, Pemerintah Tutup Dapur Bermasalah",
     category: "Bisnis",
     date: new Date("2025-09-28"),
     time: "1 bulan yang lalu",
-    image: "../public/images/gmbr30.jpg"
+    image: "/images/gmbr30.jpg"
   },
   {
     title: "Messi Sembunyi-sembunyi Datang ke Camp Nou?",
     category: "Olahraga",
     date: new Date("2025-11-11"),
     time: "4 hari yang lalu",
-    image: "../public/images/gmbr31.jpeg"
+    image: "/images/gmbr31.jpeg"
   },
   {
     title: "Menangkan GP Brasil, Norris Kian Dekat dengan Gelar Juara Dunia",
     category: "Olahraga",
     date: new Date("2025-11-10"),
     time: "5 hari yang lalu",
-    image: "../public/images/gmbr32.jpeg"
+    image: "/images/gmbr32.jpeg"
   },
   {
     title: "Apa Seburuk Itu Florian Wirtz",
     category: "Olahraga",
     date: new Date("2025-11-11"),
     time: "4 hari yang lalu",
-    image: "../public/images/gmbr33.jpeg"
+    image: "/images/gmbr33.jpeg"
   },
   {
     title: "Timnas Spanyol Coret Lamine Yamal Usai Dibuat Terkejut Barcelona",
     category: "Olahraga",
     date: new Date("2025-11-11"),
     time: "4 hari yang lalu",
-    image: "../public/images/gmbr34.jpg"
+    image: "/images/gmbr34.jpg"
   },
   {
     title: "Erik ten Hag Berpotensi Kembali ke Ajax!",
     category: "Olahraga",
     date: new Date("2025-11-11"),
     time: "4 hari yang lalu",
-    image: "../public/images/gmbr35.jpeg"
+    image: "/images/gmbr35.jpeg"
   },
   {
     title: "20 HP Android Terkencang versi Antutu Edisi Oktober 2025",
     category: "Teknologi",
     date: new Date("2025-11-10"),
     time: "5 hari yang lalu",
-    image: "../public/images/gmbr36.jpg"
+    image: "/images/gmbr36.jpg"
   },
   {
     title: "Ini Password yang Paling Banyak Digunakan di Dunia, Rawan Di-hack",
     category: "Teknologi",
     date: new Date("2025-11-13"),
     time: "2 hari yang lalu",
-    image: "../public/images/gmbr37.jpg"
+    image: "/images/gmbr37.jpg"
   },
   {
     title: "Spotify Rilis Fitur Statistik Baru, Mirip Wrapped tapi Mingguan",
     category: "Teknologi",
     date: new Date("2025-11-09"),
     time: "6 hari yang lalu",
-    image: "../public/images/gmbr38.png"
+    image: "/images/gmbr38.png"
   },
   {
     title: "Google Umumkan Project Suncatcher, Ingin Buat Pusat Data di Luar Angkasa",
     category: "Teknologi",
     date: new Date("2025-11-09"),
     time: "6 hari yang lalu",
-    image: "../public/images/gmbr39.jpg"
+    image: "/images/gmbr39.jpg"
   },
   {
     title: "Saat AI Belajar Menipu: Analisis Perilaku Manipulatif Kecerdasan Buatan",
     category: "Teknologi",
     date: new Date("2025-11-04"),
     time: "1 minggu yang lalu",
-    image: "../public/images/gmbr40.png"
+    image: "/images/gmbr40.png"
   }
 ];
 
@@ -326,7 +326,7 @@ const articlesData = {
     headline: "Purbaya Tegaskan Kebijakan Donasi Rp1.000 KDM Bukan Arahan dari Pusat",
     category: "Ekonomi",
     timestamp: "7 Oktober 2025, 19:16 WIB",
-    image: "../public/images/index1.jpeg",
+    image: "/images/index1.jpeg",
     excerpt: "Menkeu Purbaya tak mempermasalahkan kebijakan KDM menarik donasi Rp1.000 per hari dari warga, tetapi menegaskan hal itu bukan kewajiban dari pemerintah pusat. (ANTARA FOTO/ASPRILLA DWI ADHA).",
     content: `
             <p><strong>Jakarta, CNN Indonesia --</strong> Menteri Keuangan Purbaya Yudhi Sadewa menyampaikan kebijakan donasi Gubernur Jawa Barat Dedi Mulyadi alias KDM menarik donasi dari masyarakat Jawa Barat bukan arahan dari pusat.</p>
@@ -361,7 +361,7 @@ const articlesData = {
     headline: "Logitech Rilis Mouse Flagship MX Master 4, Harga Tembus Rp2 Jutaan",
     category: "Teknologi",
     timestamp: "6 Oktober 2025, 15:15 WIB",
-    image: "../public/images/index2.jpeg",
+    image: "/images/index2.jpeg",
     excerpt: "Logitech merilis mouse flagship terbaru MX Master 4 yang dibekali fitur terbaru seperti tactice haptic feedback dan actions ring. (Foto: Arsip Logitech)",
     content: `
             <p><strong>Jakarta, CNN Indonesia -- </strong>Logitech merilis mouse flagship terbaru MX Master 4 yang dibekali fitur terbaru seperti tactice haptic feedback dan actions ring. Mouse ini dijual dengan harga Rp2,399 juta.</p>
@@ -402,7 +402,7 @@ const articlesData = {
     headline: "Daftar 5 Hujan Meteor yang Aktif Bulan Oktober Ini",
     category: "Teknologi",
     timestamp: "6 Oktober 2025, 11:27 WIB",
-    image: "../public/images/index3.jpeg",
+    image: "/images/index3.jpeg",
     excerpt: "Ilustrasi. Selama Bulan Oktober, ada sejumlah pertunjukan hujan meteor yang dapat disaksikan saat langit malam. (Foto: REUTERS/FLORION GOGA)",
     content: `
             <p><strong>Jakarta, CNN Indonesia -- </strong>Peneliti Pusat Riset Antariksa Badan Riset dan Inovasi Nasional (BRIN) Thomas Djamaluddin mengatakan bola api misterius di langit yang menimbulkan suara dentuman keras adalah meteor dengan ukuran 'cukup besar'.</p>
@@ -455,7 +455,7 @@ const articlesData = {
     headline: "Hp Tiba-tiba Tidak Bisa Isi Daya? Begini Cara Mengatasinya",
     category: "Teknologi",
     timestamp: "6 Oktober 2025, 09:00 WIB",
-    image: "../public/images/ChargePhone.jpeg",
+    image: "/images/ChargePhone.jpeg",
     excerpt: "Ponsel yang tidak dapat mengisi daya mungkin menjadi masalah yang sering dialami pengguna, dan tentunya akan mengganggu aktivitas. (Foto: iStockphoto/spukkato)",
     content: `
             <p><strong>Jakarta, CNN Indonesia -- </strong>Ponsel yang tidak dapat mengisi daya mungkin menjadi masalah yang sering dialami pengguna, dan tentunya akan mengganggu aktivitas. Simak cara mengatasi masalah Hp tidak bisa mengisi daya.</p>
@@ -490,7 +490,7 @@ const articlesData = {
     headline: "Stephen Curry Torehkan Rekor NBA, Jadi Pemain Pertama Capai 4.000 Tripoin",
     category: "Olahraga",
     timestamp: "14 Maret 2025, 13:31 WIB",
-    image: "../public/images/index12.jpg",
+    image: "/images/index12.jpg",
     excerpt: "Pemain Guard Golden State Warriors Stephen Curry. Kyle Terada-USA TODAY Sports",
     content: `
             <p><strong>TEMPO.CO, Jakarta - </strong>Bintang Golden State Warriors, Stephen Curry, mencatat rekor dengan menjadi pemain pertama dalam sejarah NBA yang mencapai 4.000 tripoin dalam kariernya. Ia membukukan catatan itu dalam pertandingan melawan Sacramento Kings, Jumat WIB, 14 Maret 2025.</p>
@@ -517,7 +517,7 @@ const articlesData = {
     headline: "Hasil Race F1 GP Singapura 2025: George Rusell Menang, Max Verstappen Ungguli Lando Norris",
     category: "Olahraga",
     timestamp: "5 Oktober 2025, 21:02 WIB",
-    image: "../public/images/index13.jpg",
+    image: "/images/index13.jpg",
     excerpt: "George Russell tampil sebagai pemenang balapan F1 GP Singapura 2025 (Foto X/@F1)",
     content: `
             <p><strong>SINGAPURA - </strong>Hasil race F1 GP Singapura 2025, Minggu (5/10/2025) malam WIB, sudah diketahui. George Russell tampil sebagai pemenang di Sirkuit Marina Bay, Singapura!</p>
@@ -569,7 +569,7 @@ const articlesData = {
     headline: "Satu Hal yang Flick Suka Usai Barca Dihajar Sevilla",
     category: "Olahraga",
     timestamp: "6 Oktober 2025, 20:15 WIB",
-    image: "../public/images/index14.jpeg",
+    image: "/images/index14.jpeg",
     excerpt: "Flick (kanan) tampak berbicara dengan para pemain Barca di tengah laga melawan Sevilla. Foto: Getty Images/Soccrates Images",
     content: `
             <p><strong>Sevilla - </strong>Kekalahan Barcelona dari Sevilla di Liga Spanyol menyisakan banyak pekerjaan rumah bagi pelatih Hansi Flick. Namun paling tidak ia melihat satu hal positif dari para pemainnya usai laga tersebut.</p>
@@ -596,7 +596,7 @@ const articlesData = {
     headline: "Krakatau Steel Mendapat Keringanan Utang dari 4 Bank Swasta",
     category: "Bisnis",
     timestamp: "7 Oktober 2025, 18:31 WIB",
-    image: "../public/images/gmbr1.jpg",
+    image: "/images/gmbr1.jpg",
     excerpt: "Nilai total kewajiban Krakatau Steel yang mendapat keringanan dan dipercepat sebesar Rp 248 miliar atau US$ 159 juta.",
     content: `
             <p>PT Krakatau Steel (Persero) Tbk mendapat keringanan atas utang terhadap empat bank swasta. Nilai total kewajiban Krakatau Steel yang mendapat keringanan dan dipercepat sebesar Rp 248 miliar atau US$ 159 juta.</p>
@@ -619,7 +619,7 @@ const articlesData = {
     headline: "Ousmane Dembele Raih Gelar Ballon d'Or 2025",
     category: "Olahraga",
     timestamp: "23 September 2025, 3:58 WIB",
-    image: "../public/images/Dembele.jpg",
+    image: "/images/Dembele.jpg",
     excerpt: "Ousmane Dembele berhasil meraih penghargaan pesepak bola terbaik, Ballon d'Or 2025.",
     content: `
             <p><strong>Paris - </strong>Ousmane Dembele meraih gelar Ballon d'Or 2025. Bintang Paris Saint-Germain ini mendapatkan gelar tersebut usai mengungguli Lamine Yamal dan Vitinha.</p>
@@ -644,7 +644,7 @@ const articlesData = {
     headline: "Inikah Kandidat Kuat CEO Apple Pengganti Tim Cook?",
     category: "Teknologi",
     timestamp: "7 Oktober 2025, 08:24 WIB",
-    image: "../public/images/Apple.png",
+    image: "/images/Apple.png",
     excerpt: "CEO Apple, Tim Cook. (REUTERS/Carlos Barria)",
     content: `
             <p><strong>KOMPAS.com - </strong>CEO Apple Tim Cook kabarnya semakin mendekati masa pensiun. Sosok yang digadang-gadang menjadi suksesornya pun mulai bermunculan.</p>
@@ -693,7 +693,7 @@ const articlesData = {
     headline: "Messi Sembunyi-sembunyi Datang ke Camp Nou?",
     category: "Olahraga",
     timestamp: "11 November 2025, 14:40 WIB",
-    image: "../public/images/gmbr31.jpeg",
+    image: "/images/gmbr31.jpeg",
     excerpt: "Foto: Instagram/leomessi",
     content: `
             <p><strong>Jakarta - </strong>Lionel Messi bikin heboh dengan mem-posting foto di Stadion Camp Nou, kandangnya Barcelona. Muncul kabar, Messi melakukannya sembunyi-sembunyi.</p>
@@ -726,7 +726,7 @@ const articlesData = {
     headline: "Menangkan GP Brasil, Norris Kian Dekat dengan Gelar Juara Dunia",
     category: "Olahraga",
     timestamp: "10 November 2025, 12:10 WIB",
-    image: "../public/images/gmbr32.jpeg",
+    image: "/images/gmbr32.jpeg",
     excerpt: "Lando Norris dengan trofi juara GP Brasil 2025. Foto: Formula 1 via Getty Images/Anni Graf - Formula 1",
     content: `
             <p><strong>Sao Paulo - </strong>Lando Norris memperlebar jarak dari para rival usai memenangkan seri Formula 1 GP Brasil 2025. Pebalap McLaren asal Inggris itu kini memegang kendali penuh persaingan merebut gelar juara dunia musim ini.</p>
@@ -755,7 +755,7 @@ const articlesData = {
     headline: "Google Umumkan Project Suncatcher, Ingin Buat Pusat Data di Luar Angkasa",
     category: "Teknologi",
     timestamp: "9 November 2025, 08:01 WIB",
-    image: "../public/images/gmbr39.jpg",
+    image: "/images/gmbr39.jpg",
     excerpt: "Google mengumumkan proyek ambisius bernama Project Suncatcher untuk menempatkan pusat data di luar angkasa. (Google)",
     content: `
             <p><strong>KOMPAS.com - </strong>Google mengumumkan proyek ambisius baru bernama Suncatcher. Proyek ini diumumkan langsung oleh Chief Executive Officer (CEO) Google Sundar Pichai.</p>
@@ -820,7 +820,7 @@ const articlesData = {
     headline: "Saat AI Belajar Menipu: Analisis Perilaku Manipulatif Kecerdasan Buatan",
     category: "Teknologi",
     timestamp: "4 November 2025, 12:36 WIB",
-    image: "../public/images/gmbr40.png",
+    image: "/images/gmbr40.png",
     excerpt: "Ilustrasi beberapa logo aplikasi chatboi artificial intelligence (AI). (Thomas Fuller/SOPA Images via Getty Images)",
     content: `
             <p><strong>BAYANGKAN </strong>sebuah dunia di mana mesin yang kita ciptakan untuk melayani kita justru belajar memanipulasi, berbohong, bahkan "membunuh" untuk mempertahankan eksistensinya. Ini bukan lagi fiksi ilmiah.</p>
