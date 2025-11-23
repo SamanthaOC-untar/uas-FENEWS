@@ -1,0 +1,339 @@
+.searchContainer {
+  padding: 2rem 1rem;
+  min-height: calc(100vh - var(--header-height));
+  max-width: 1200px;
+}
+
+.searchHeader {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.searchTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--surface-contrast);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.searchTitle i {
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+
+.resultCount {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-left: 0.25rem;
+}
+
+.resultCount i {
+  font-size: 1rem;
+}
+
+.resultCount span {
+  line-height: 1.5;
+}
+
+.filterSection {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: var(--surface);
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.filterLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--surface-contrast);
+}
+
+.filterLabel i {
+  font-size: 1.1rem;
+}
+
+.filterSelect {
+  background-color: var(--color-background);
+  border: 2px solid var(--border);
+  color: var(--color-page-fg);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filterSelect:focus {
+  background-color: var(--color-background);
+  border-color: var(--color-page-fg);
+  color: var(--color-page-fg);
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.1);
+}
+
+.filterSelect option {
+  background-color: var(--color-background);
+  color: var(--color-page-fg);
+  padding: 0.5rem;
+}
+
+.newsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 2rem;
+  background-color: var(--surface);
+  border-radius: 0.75rem;
+  padding: 0 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  color: var(--color-page-fg);
+}
+
+.loading p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: var(--muted);
+}
+
+.noResults {
+  text-align: center;
+  padding: 5rem 2rem;
+  color: var(--surface-contrast);
+  background-color: rgba(77, 61, 48, 0.6);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  
+}
+
+.noResults i {
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.5);
+  align-items: center;
+  justify-content: center;
+}
+
+.noResults h3 {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.noResults p {
+  font-size: 1.05rem;
+  opacity: 0.85;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.resetButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem 2.5rem;
+  background-color: rgba(246, 247, 251, 0.98);
+  color: var(--earth-900);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-shadow: none;
+  letter-spacing: 0.3px;
+}
+
+.resetButton:hover {
+  background-color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.resetButton:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.resetButton i {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  width: 1rem;
+  height: 1rem;
+  padding-right: 1rem;
+  padding-top: 1.5rem;
+}
+
+.paginationWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.pageInfo {
+  font-size: 0.95rem;
+  color: var(--muted);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pageInfo i {
+  font-size: 1rem;
+}
+
+.pageCounter {
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.pagination {
+  margin: 0;
+}
+
+.pagination :global(.page-link) {
+  background-color: var(--surface);
+  border-color: var(--border);
+  color: var(--color-page-fg);
+  padding: 0.5rem 0.75rem;
+  margin: 0 0.25rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.pagination :global(.page-link:hover) {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: var(--color-page-fg);
+  color: var(--color-page-fg);
+}
+
+.pagination :global(.page-item.active .page-link) {
+  background-color: var(--color-page-fg);
+  border-color: var(--color-page-fg);
+  color: var(--color-background);
+  font-weight: 600;
+}
+
+.pagination :global(.page-item.disabled .page-link) {
+  background-color: var(--surface);
+  border-color: var(--border);
+  color: var(--muted);
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .searchContainer {
+    padding: 1.5rem 1rem;
+  }
+
+  .searchTitle {
+    font-size: 1.5rem;
+  }
+
+  .searchTitle i {
+    font-size: 1.25rem;
+  }
+
+  .filterSection {
+    padding: 1rem;
+  }
+
+  .filterSelect {
+    padding: 0.65rem 0.85rem;
+    font-size: 0.95rem;
+  }
+
+  .newsList {
+    padding: 0 1rem;
+  }
+
+  .pagination :global(.page-link) {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .searchTitle {
+    font-size: 1.35rem;
+  }
+
+  .searchTitle i {
+    font-size: 1.15rem;
+  }
+
+  .filterLabel {
+    font-size: 0.9rem;
+  }
+
+  .filterSelect {
+    padding: 0.6rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .noResults {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .noResults i {
+    font-size: 3.5rem;
+  }
+
+  .noResults h3 {
+    font-size: 1.35rem;
+  }
+
+  .noResults p {
+    font-size: 0.95rem;
+  }
+
+  .resetButton {
+    padding: 0.85rem 2rem;
+    font-size: 1rem;
+    gap: 0.65rem;
+  }
+  
+  .resetButton i {
+    font-size: 1.15rem;
+  }
+}

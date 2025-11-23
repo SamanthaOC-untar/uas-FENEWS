@@ -1,11 +1,22 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
-import { Container, Nav } from 'react-bootstrap';
+import { useRouter } from 'next/navigation';
+import { Container, Nav, Form, InputGroup } from 'react-bootstrap';
 import styles from '../app/styles/header.module.css';
 
 export function Header() {
+  const [searchQuery, setSearchQuery] = useState('');
+  const router = useRouter();
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      router.push(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
+    }
+  };
+
   return (
     <header className={styles.header}>
       <Container className={styles.inner}>
@@ -20,7 +31,23 @@ export function Header() {
           <span className={styles.tagline}>Fast &amp; Accurate</span>
         </Link>
 
-        {/* Nav kanan pakai react-bootstrap */}
+        {/* Search Box */}
+        <Form onSubmit={handleSearch} className={styles.searchForm}>
+          <InputGroup>
+            <Form.Control
+              type="search"
+              placeholder="Cari berita..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className={styles.searchInput}
+            />
+            <button type="submit" className={styles.searchButton}>
+              <i className="bi bi-search"></i>
+            </button>
+          </InputGroup>
+        </Form>
+
+        {/* Nav kanan */}
         <Nav
           as="nav"
           aria-label="Main navigation"

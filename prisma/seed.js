@@ -349,7 +349,7 @@ const newsData = [
     category: "Teknologi",
     date: new Date("2025-10-06"),
     time: "1 bulan yang lalu",
-    image: "/images/ChargePhone.jppg",
+    image: "/images/ChargePhone.jpeg",
     link: "/details/artikel-4"
   },
   {
