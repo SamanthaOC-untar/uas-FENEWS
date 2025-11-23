@@ -1,5 +1,3 @@
-// prisma/seed.js
-
 const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient();
 
@@ -43,7 +41,7 @@ const newsData = [
     date: new Date("2025-10-07"),
     time: "1 bulan yang lalu",
     image: "/images/gmbr1.jpg",
-    link: "detail.html?id=artikel-8"
+    link: "/details/artikel-8"
   },
   {
     title: "Bagaimana Dampak Kelangkaan BBM di SPBU Swasta terhadap Iklim Investasi",
@@ -253,14 +251,16 @@ const newsData = [
     category: "Olahraga",
     date: new Date("2025-11-11"),
     time: "4 hari yang lalu",
-    image: "/images/gmbr31.jpeg"
+    image: "/images/gmbr31.jpeg",
+    link: "/details/artikel-11"
   },
   {
     title: "Menangkan GP Brasil, Norris Kian Dekat dengan Gelar Juara Dunia",
     category: "Olahraga",
     date: new Date("2025-11-10"),
     time: "5 hari yang lalu",
-    image: "/images/gmbr32.jpeg"
+    image: "/images/gmbr32.jpeg",
+    link: "/details/artikel-12"
   },
   {
     title: "Apa Seburuk Itu Florian Wirtz",
@@ -309,14 +309,88 @@ const newsData = [
     category: "Teknologi",
     date: new Date("2025-11-09"),
     time: "6 hari yang lalu",
-    image: "/images/gmbr39.jpg"
+    image: "/images/gmbr39.jpg",
+    link: "/details/artikel-13"
   },
   {
     title: "Saat AI Belajar Menipu: Analisis Perilaku Manipulatif Kecerdasan Buatan",
     category: "Teknologi",
     date: new Date("2025-11-04"),
     time: "1 minggu yang lalu",
-    image: "/images/gmbr40.png"
+    image: "/images/gmbr40.png",
+    link: "/details/artikel-14"
+  },
+  {
+    title: "Purbaya Tegaskan Kebijakan Donasi Rp1.000 KDM Bukan Arahan dari Pusat",
+    category: "Ekonomi",
+    date: new Date("2025-10-07"),
+    time: "1 bulan yang lalu",
+    image: "/images/index1.jpeg",
+    link: "/details/artikel-1"
+  },
+  {
+    title: "Logitech Rilis Mouse Flagship MX Master 4, Harga Tembus Rp2 Jutaan",
+    category: "Teknologi",
+    date: new Date("2025-10-06"),
+    time: "1 bulan yang lalu",
+    image: "/images/index2.jpeg",
+    link: "/details/artikel-2"
+  },
+  {
+    title: "Daftar 5 Hujan Meteor yang Aktif Bulan Oktober Ini",
+    category: "Teknologi",
+    date: new Date("2025-10-06"),
+    time: "1 bulan yang lalu",
+    image: "/images/index3.jpeg",
+    link: "/details/artikel-3"
+  },
+  {
+    title: "Hp Tiba-tiba Tidak Bisa Isi Daya? Begini Cara Mengatasinya",
+    category: "Teknologi",
+    date: new Date("2025-10-06"),
+    time: "1 bulan yang lalu",
+    image: "/images/ChargePhone.jppg",
+    link: "/details/artikel-4"
+  },
+  {
+    title: "Stephen Curry Torehkan Rekor NBA, Jadi Pemain Pertama Capai 4.000 Tripoin",
+    category: "Olahraga",
+    date: new Date("2025-03-14"),
+    time: "8 bulan yang lalu",
+    image: "/images/index12.jpg",
+    link: "/details/artikel-5"
+  },
+  {
+    title: "Hasil Race F1 GP Singapura 2025: George Rusell Menang, Max Verstappen Ungguli Lando Norris",
+    category: "Olahraga",
+    date: new Date("2025-10-05"),
+    time: "1 bulan yang lalu",
+    image: "/images/index13.jpg",
+    link: "/details/artikel-6"
+  },
+  {
+    title: "Satu Hal yang Flick Suka Usai Barca Dihajar Sevilla",
+    category: "Olahraga",
+    date: new Date("2025-10-06"),
+    time: "1 bulan yang lalu",
+    image: "/images/index14.jpeg",
+    link: "/details/artikel-7"
+  },
+  {
+    title: "Ousmane Dembele Raih Gelar Ballon d'Or 2025",
+    category: "Teknologi",
+    date: new Date("2025-09-23"),
+    time: "1 bulan yang lalu",
+    image: "/images/Dembele.jpg",
+    link: "/details/artikel-9"
+  },
+  {
+    title: "Inikah Kandidat Kuat CEO Apple Pengganti Tim Cook?",
+    category: "Teknologi",
+    date: new Date("2025-10-07"),
+    time: "1 bulan yang lalu",
+    image: "/images/Apple.png",
+    link: "/details/artikel-10"
   }
 ];
 
