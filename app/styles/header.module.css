@@ -136,6 +136,83 @@
   outline: none;
 }
 
+/* === Profile Dropdown di Header === */
+
+/* Tombol toggle (icon orang) */
+.header :global(#profile-dropdown) {
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+/* Hilangkan caret default dropdown */
+.header :global(#profile-dropdown.dropdown-toggle::after) {
+  display: none;
+}
+
+/* Biar icon ikut gaya navLink (center, clickable) */
+.header :global(#profile-dropdown i) {
+  font-size: 1.35rem;
+  vertical-align: middle;
+}
+
+/* Dropdown menu tampilan gelap lembut sesuai header */
+.header :global(.dropdown-menu) {
+  background-color: var(--color-background);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0.75rem;
+  padding: 0.25rem;
+  min-width: 11rem;
+  margin-top: 0.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* Posisi menu mepet ke kanan (align="end" di JSX sudah bantu) */
+.header :global(.dropdown-menu[data-bs-popper]) {
+  right: 0;
+  left: auto;
+}
+
+/* Item di dalam dropdown (Login, Sign Up, Profile, Logout) */
+.header :global(.dropdown-item) {
+  font-size: 0.9rem;
+  color: var(--color-foreground);
+  padding: 0.45rem 0.85rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.15s ease, color 0.15s ease, opacity 0.15s ease;
+}
+
+/* Hover / focus item */
+.header :global(.dropdown-item:hover),
+.header :global(.dropdown-item:focus) {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: var(--color-foreground);
+}
+
+/* Item aktif / pressed */
+.header :global(.dropdown-item:active) {
+  background-color: var(--earth-500);
+  color: #fff;
+}
+
+/* Hapus garis biru jelek di button-item (Logout) */
+.header :global(.dropdown-item:focus-visible) {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Responsive tweak kecil: jangan terlalu lebar di mobile */
+@media (max-width: 640px) {
+  .header :global(.dropdown-menu) {
+    min-width: 9.5rem;
+  }
+
+  .header :global(#profile-dropdown i) {
+    font-size: 1.2rem;
+  }
+}
+
+
 /* Responsif */
 @media (max-width: 1024px) {
   .searchForm {
