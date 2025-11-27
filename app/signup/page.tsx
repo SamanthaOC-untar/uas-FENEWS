@@ -1,9 +1,55 @@
 'use client';
 
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { Container, Row, Col, Form, Button, Card } from 'react-bootstrap';
 import styles from './signup.module.css';
 
 export default function RegisterPage() {
+  const router = useRouter();
+
+  const [fullName, setFullName] = useState('');
+  const [phone, setPhone] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [passwordConfirm, setPasswordConfirm] = useState('');
+
+  const [loading, setLoading] = useState(false);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setErrorMsg(null);
+    setLoading(true);
+
+    try {
+      const res = await fetch('/api/auth/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          fullName,
+          phone,
+          email,
+          password,
+          passwordConfirm,
+        }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        setErrorMsg(data.message || 'Registrasi gagal.');
+      } else {
+        // kalau sukses, arahkan ke halaman login
+        router.push('/login');
+      }
+    } catch (err) {
+      setErrorMsg('Terjadi kesalahan jaringan.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <Container fluid className={styles.registerPage}>
       <Row className="justify-content-center w-100">
@@ -14,7 +60,11 @@ export default function RegisterPage() {
                 Sign Up
               </h2>
 
-              <Form>
+              {errorMsg && (
+                <div className="alert alert-danger py-2 mb-3">{errorMsg}</div>
+              )}
+
+              <Form onSubmit={handleSubmit}>
                 {/* BARIS 1: Nama & Telepon (2 kolom) */}
                 <Row className="g-3 mb-3">
                   <Col xs={12} md={6}>
@@ -27,6 +77,8 @@ export default function RegisterPage() {
                         type="text"
                         placeholder="Masukkan nama lengkap"
                         required
+                        value={fullName}
+                        onChange={(e) => setFullName(e.target.value)}
                       />
                     </Form.Group>
                   </Col>
@@ -41,6 +93,8 @@ export default function RegisterPage() {
                         type="tel"
                         placeholder="Masukkan nomor telepon"
                         required
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value)}
                       />
                     </Form.Group>
                   </Col>
@@ -54,6 +108,8 @@ export default function RegisterPage() {
                     type="email"
                     placeholder="Masukkan email"
                     required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </Form.Group>
 
@@ -69,6 +125,8 @@ export default function RegisterPage() {
                         type="password"
                         placeholder="Masukkan kata sandi"
                         required
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
                       />
                     </Form.Group>
                   </Col>
@@ -83,6 +141,8 @@ export default function RegisterPage() {
                         type="password"
                         placeholder="Konfirmasi kata sandi"
                         required
+                        value={passwordConfirm}
+                        onChange={(e) => setPasswordConfirm(e.target.value)}
                       />
                     </Form.Group>
                   </Col>
@@ -91,8 +151,9 @@ export default function RegisterPage() {
                 <Button
                   type="submit"
                   className={`${styles.btnRegister} w-100 mb-3`}
+                  disabled={loading}
                 >
-                  Daftar
+                  {loading ? 'Memproses...' : 'Daftar'}
                 </Button>
 
                 <div className="text-center small mb-2">

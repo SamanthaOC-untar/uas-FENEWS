@@ -37,3 +37,25 @@ model Article {
 
   @@map("articles")
 }
+
+enum UserStatus {
+  PEMBACA_FE_NEWS
+  PEMINAT_FE_NEWS
+  PECINTA_FE_NEWS
+}
+
+model User {
+  id           Int         @id @default(autoincrement())
+  fullName     String
+  phone        String
+  email        String      @unique
+  username     String?     @unique
+  status       UserStatus  @default(PEMBACA_FE_NEWS)
+  interests    String?     
+  passwordHash String
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
+
+  @@map("users")
+}
+
