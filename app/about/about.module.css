@@ -1,0 +1,381 @@
+:root {
+  --earth-900: #0f090b; /* coal */
+  --earth-800: #1d1513; /* dark roast */
+  --earth-700: #2d231a; /* espresso */
+  --earth-600: #4b3d30; /* umber */
+  --earth-500: #756e5e; /* taupe */
+  --earth-400: #938d7f; /* greige */
+}
+
+/* ===== GENERAL STYLING ===== */
+.page {
+  font-family: "Poppins", system-ui, sans-serif;
+  color: var(--earth-400);
+  background-color: var(--earth-900);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  position: relative;
+  height: 70vh;
+  background: url("/images/gedung.png") center/cover no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(15, 9, 11, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroContent {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+.heroContent h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, var(--earth-400), var(--earth-600));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroContent p {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #e6e3dd;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== VISI & MISI SECTION ===== */
+.vision {
+  position: relative;
+  padding: 100px 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  color: var(--earth-900);
+  background: 
+    linear-gradient(rgba(117, 110, 94, 0.85), rgba(75, 61, 48, 0.85)),
+    url("/images/gedung.png") center/cover no-repeat;
+  background-attachment: fixed;
+  border-radius: 10px;
+}
+
+.textBlock {
+  flex: 1 1 45%;
+  min-width: 320px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 40px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.textBlock:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+}
+
+.textBlock h2 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.textBlock p,
+.textBlock li {
+  color: #e9e6e2;
+  line-height: 1.7;
+}
+
+/* ===== TENTANG KAMI (PURPOSE) SECTION ===== */
+.aboutPurpose {
+  background-color: var(--earth-900);
+  color: var(--earth-400);
+  padding: 100px 5%;
+  text-align: center;
+}
+
+.aboutContent {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.aboutContent h2 {
+  font-size: 2.2rem;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.aboutContent p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--earth-400);
+  text-align: left;
+}
+
+/* ===== NILAI KAMI SECTION ===== */
+.team {
+  background: 
+    linear-gradient(rgba(45, 35, 26, 0.85), rgba(29, 21, 19, 0.85));
+  text-align: center;
+  padding: 100px 5%;
+  background-attachment: fixed;
+}
+
+.team h2 {
+  font-size: 2.2rem;
+  color: var(--earth-400);
+  margin-bottom: 50px;
+}
+
+.teamGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  color: var(--earth-400);
+  border-radius: 15px;
+  padding: 25px 20px;
+  width: 280px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* ===== KOMITMEN SECTION ===== */
+.commitment {
+  background: 
+    linear-gradient(rgba(117, 110, 94, 0.9), rgba(75, 61, 48, 0.9));
+  background-attachment: fixed;
+  color: var(--earth-900);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.commitText {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 40px;
+  backdrop-filter: blur(8px);
+}
+
+.commitText h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.commitText p {
+  color: #e9e6e2;
+  line-height: 1.8;
+}
+
+/* ===== SOSIAL MEDIA SECTION ===== */
+.social {
+  background-color: var(--earth-900);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.social h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: var(--earth-400);
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.icon {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 25px;
+  width: 140px;
+  color: var(--earth-400);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon svg {
+  font-size: 1.8rem;
+}
+
+.icon p {
+  margin: 0;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.icon:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-6px);
+}
+
+/* ===== FOOTER SECTION ===== */
+.footer {
+  background: var(--earth-800);
+  color: var(--earth-500);
+  padding: 80px 5% 30px 5%;
+  font-size: 0.9rem;
+}
+
+.footerMain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.footerBrand {
+  flex: 2 1 300px;
+  min-width: 250px;
+}
+
+.footerBrand h4 {
+  font-size: 1.8rem;
+  color: var(--earth-400);
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+
+.footerBrand p {
+  line-height: 1.6;
+  margin-bottom: 25px;
+  max-width: 350px;
+}
+
+.footerSocials {
+  display: flex;
+  gap: 18px;
+}
+
+.footerSocials a {
+  color: var(--earth-500);
+  font-size: 1.3rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footerSocials a:hover {
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.footerLinks {
+  flex: 1 1 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footerLinks h5 {
+  font-size: 1.1rem;
+  color: #fff;
+  margin: 0 0 10px 0;
+  font-weight: 500;
+}
+
+.footerLinks a {
+  color: var(--earth-500);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footerLinks a:hover {
+  color: #fff;
+  padding-left: 4px;
+}
+
+.footerBottom {
+  text-align: center;
+  border-top: 1px solid var(--earth-700);
+  padding-top: 30px;
+  margin-top: 30px;
+}
+
+.footerBottom p {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .vision {
+    flex-direction: column;
+    padding: 80px 20px;
+  }
+
+  .textBlock {
+    padding: 30px;
+  }
+
+  .teamGrid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heroContent h1 {
+    font-size: 2.5rem;
+  }
+
+  .heroContent p {
+    font-size: 1rem;
+  }
+
+  .commitText {
+    padding: 30px;
+  }
+
+  .icon {
+    width: 120px;
+  }
+}

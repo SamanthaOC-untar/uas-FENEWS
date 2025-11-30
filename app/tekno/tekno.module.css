@@ -1,0 +1,74 @@
+.pageContainer {
+    width: 100%;
+    max-width: 1280px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 1rem; 
+}
+
+/* Kunci Solusi Overlap Header */
+.pageContainer.withHeaderMargin {
+    margin-top: 3.5rem;
+}
+
+.horizontalDivider {
+    border-top: 1px solid var(--border);
+    margin: 2.5rem 0; 
+}
+
+.contentGrid {
+    display: grid;
+    gap: 2rem; 
+    margin-top: 2.5rem; 
+}
+
+@media (min-width: 768px) {
+    .contentGrid {
+        grid-template-columns: 2fr 1fr; 
+    }
+}
+
+/* Footer Styling */
+.footer {
+    background-color: var(--earth-800);
+    color: var(--color-foreground);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footerTextMuted {
+    color: var(--muted);
+}
+
+/* Sidebar Box Styling */
+.sidebarContainer {
+    background-color: var(--surface);
+    padding: 1rem; 
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.sidebarSeeMore {
+    color: var(--muted);
+}
+
+/* Load More Button Styling */
+.loadMoreButton {
+    background-color: var(--earth-600);
+    color: var(--color-foreground);
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    border: none; 
+    cursor: pointer;
+}
+.loadMoreButton:hover {
+    background-color: var(--earth-700);
+}
+
+/* News Card Spacing */
+.newsCardWrapper {
+    margin-bottom: 1.5rem;
+}
