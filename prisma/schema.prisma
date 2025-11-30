@@ -53,9 +53,36 @@ model User {
   status       UserStatus  @default(PEMBACA_FE_NEWS)
   interests    String?     
   passwordHash String
+  subscriptions Subscription[]
   createdAt    DateTime    @default(now())
   updatedAt    DateTime    @updatedAt
 
   @@map("users")
+}
+
+enum SubscriptionPlan {
+  MONTHLY
+  YEARLY
+}
+
+enum SubscriptionStatus {
+  ACTIVE
+  INACTIVE
+  EXPIRED
+}
+
+model Subscription {
+  id            Int                @id @default(autoincrement())
+  userId        Int
+  user          User               @relation(fields: [userId], references: [id], onDelete: Cascade)
+  plan          SubscriptionPlan   @default(MONTHLY)
+  priceInRupiah Int
+  status        SubscriptionStatus @default(ACTIVE)
+  startDate     DateTime           @default(now())
+  endDate       DateTime
+  createdAt     DateTime           @default(now())
+  updatedAt     DateTime           @updatedAt
+
+  @@map("subscriptions")
 }
 

@@ -267,21 +267,24 @@ const newsData = [
     category: "Olahraga",
     date: new Date("2025-11-11"),
     time: "4 hari yang lalu",
-    image: "/images/gmbr33.jpeg"
+    image: "/images/gmbr33.jpeg",
+    link: "/details/artikel-15"
   },
   {
     title: "Timnas Spanyol Coret Lamine Yamal Usai Dibuat Terkejut Barcelona",
     category: "Olahraga",
     date: new Date("2025-11-11"),
     time: "4 hari yang lalu",
-    image: "/images/gmbr34.jpg"
+    image: "/images/gmbr34.jpg",
+    link: "/details/artikel-16"
   },
   {
     title: "Erik ten Hag Berpotensi Kembali ke Ajax!",
     category: "Olahraga",
     date: new Date("2025-11-11"),
     time: "4 hari yang lalu",
-    image: "/images/gmbr35.jpeg"
+    image: "/images/gmbr35.jpeg",
+    link: "/details/artikel-17"
   },
   {
     title: "20 HP Android Terkencang versi Antutu Edisi Oktober 2025",
@@ -1113,6 +1116,75 @@ const articlesData = {
             <p>Pertanyaannya bukan lagi "bisakah AI menipu kita?" Jawabannya sudah jelas: ya. Pertanyaan yang tepat adalah: "Bagaimana kita merancang jaringan di mana AI yang canggih dapat beroperasi tanpa merugikan manusia, bahkan ketika itu menguntungkan bagi AI untuk melakukannya?"</p>
 
             <p>Jawaban atas pertanyaan ini akan menentukan apakah masa depan manusia-AI adalah kolaborasi yang produktif atau konflik yang destruktif. Sangat krusial.</p>
+        `,
+    },
+  "artikel-15": {
+    id: "artikel-15",
+    headline: "Apa Seburuk Itu Florian Wirtz",
+    category: "Olahraga",
+    timestamp: "11 November 2025, 10:15 WIB",
+    image: "/images/gmbr33.jpeg",
+    excerpt: "Pemain Bayer Leverkusen Florian Wirtz mengalami penurunan performa musim ini.",
+    content: `
+            <p><strong>Leverkusen - </strong>Florian Wirtz, pemain terkemuka Bayer Leverkusen, telah mengalami musim yang penuh tantangan sejauh ini. Banyak yang bertanya-tanya apakah Wirtz sedang kehilangan bentuk ataukah hanya fase transisi dalam kariernya.</p>
+
+            <p>Dibandingkan dengan musim lalu di mana Wirtz tampil gemilang dan menjadi salah satu pemain utama dalam pencapaian Leverkusen, performa musim ini terlihat kurang mengesankan. Dengan hanya 5 gol dalam 15 pertandingan Bundesliga, statistiknya jauh di bawah ekspektasi.</p>
+
+            <p>"Florian sedang mengalami fase yang menantang. Namun, kami percaya dia akan segera kembali ke performa terbaiknya," kata manajer Bayer Leverkusen Xabi Alonso dalam wawancara baru-baru ini.</p>
+
+            <p>Para analis sepak bola berpendapat bahwa penurunan performa Wirtz bisa disebabkan oleh berbagai faktor, termasuk tekanan dari transfer market yang terus menghubungkan namanya dengan klub-klub besar Eropa, terutama Real Madrid dan Manchester City.</p>
+
+            <p>Namun, Wirtz sendiri tetap optimis dan berkomitmen untuk menunjukkan kualitasnya. "Saya tidak khawatir. Ini hanya fase yang akan berlalu. Saya akan terus bekerja keras dan memberikan yang terbaik untuk Leverkusen," kata pemuda berbakat itu.</p>
+
+            <p>Dengan pertandingan penting menjelang di bulan Desember, Wirtz memiliki kesempatan sempurna untuk membuktikan dirinya dan membantu Leverkusen tetap bersaing di posisi teratas Bundesliga. Suporter Leverkusen yakin bahwa Wirtz akan menunjukkan performa cemerlangnya segera.</p>
+
+            <p>Sejarah membuktikan bahwa pemain besar seperti Wirtz selalu punya kemampuan untuk bangkit dari krisis performa. Adalah pertanyaan bukan apakah dia bisa kembali, tetapi kapan waktu yang tepat untuk itu terjadi.</p>
+        `,
+    },
+  "artikel-16": {
+    id: "artikel-16",
+    headline: "Timnas Spanyol Coret Lamine Yamal Usai Dibuat Terkejut Barcelona",
+    category: "Olahraga",
+    timestamp: "11 November 2025, 16:45 WIB",
+    image: "/images/gmbr34.jpg",
+    excerpt: "Lamine Yamal tidak akan bermain untuk Spanyol dalam pertandingan internasional mendatang.",
+    content: `
+            <p><strong>Madrid - </strong>Federasi Sepak Bola Spanyol (RFEF) secara resmi mengumumkan bahwa Lamine Yamal telah dicoretan dari skuad untuk pertandingan internasional mendatang. Keputusan ini diambil berdasarkan evaluasi medis tim kesehatan nasional.</p>
+
+            <p>Yamal, yang dianggap sebagai salah satu bintang muda Spanyol, dikabarkan mengalami cedera ringan pada sendi pergelangan kaki kirinya. Cedera ini terjadi saat pertandingan liga antara Barcelona dan Real Sociedad yang membuatnya harus ditarik keluar dari lapangan di tengah pertandingan.</p>
+
+            <p>"Kesehatan dan keselamatan pemain adalah prioritas utama kami. Kami memutuskan untuk memberikan Yamal waktu istirahat yang cukup untuk pemulihan optimal," kata seleksi Spanyol Luis de la Fuente dalam pernyataan pers resmi.</p>
+
+            <p>Barcelona juga merespons positif keputusan ini, mengakui bahwa istirahat yang cukup akan membantu Yamal pulih sepenuhnya. Pemain muda itu diharapkan akan kembali dalam kondisi prima untuk pertandingan liga berikutnya pada minggu depan.</p>
+
+            <p>Penghapusan Yamal dari skuad membuka peluang bagi pemain lain untuk menunjukkan kemampuan mereka di tingkat internasional. RFEF telah mengundang beberapa pemain alternatif untuk menggantikan posisi Yamal dalam skuad yang diperkuat.</p>
+
+            <p>Meski begitu, tidak ada indikasi bahwa cedera Yamal akan bersifat serius. Diperkirakan pemain muda Barcelona itu akan pulih dalam waktu satu minggu dan siap bermain di pertandingan berikutnya di kompetisi domestic maupun internasional.</p>
+
+            <p>Bagi Barcelona, ini adalah pukulan karena Yamal merupakan pemain kunci dalam skema permainan offensif mereka musim ini. Namun demikian, klub berharap dapat menjalani pertandingan mendatang dengan baik sambil menunggu pemulihan Yamal.</p>
+        `,
+    },
+  "artikel-17": {
+    id: "artikel-17",
+    headline: "Erik ten Hag Berpotensi Kembali ke Ajax!",
+    category: "Olahraga",
+    timestamp: "11 November 2025, 09:20 WIB",
+    image: "/images/gmbr35.jpeg",
+    excerpt: "Spekulasi mengatakan Erik ten Hag mempertimbangkan penawaran Ajax untuk kembali ke Amsterdam.",
+    content: `
+            <p><strong>Amsterdam - </strong>Setelah resmi meninggalkan Manchester United beberapa hari lalu, Erik ten Hag kini menjadi incaran Ajax untuk mengembalikan kebesaran klub di musim depan. Ajax dilaporkan tengah melakukan negosiasi intensif dengan mantan pelatih mereka.</p>
+
+            <p>Ten Hag memiliki hubungan yang erat dengan Ajax, di mana dia membangun fondasi yang kuat untuk menjadi salah satu pelatih terbaik di Eropa. Selama periode tiga tahun di Amsterdam (2018-2022), ten Hag berhasil membawa Ajax menjadi kompetitor serius di Liga Champions dan memenangkan beberapa gelar domestik.</p>
+
+            <p>"Erik adalah pilihan ideal untuk membawa Ajax kembali ke posisi sebelumnya sebagai kekuatan besar di Eropa. Kami sangat berharap untuk berdiskusi dengan beliau," kata Direktur Olahraga Ajax Klaas-Jan Huntelaar kepada media lokal.</p>
+
+            <p>Sementara itu, ten Hag sendiri belum memberikan pernyataan resmi tentang kemungkinannya kembali ke Ajax. Namun, sumber dekat mengatakan bahwa ten Hag tertarik dengan proyek yang ditawarkan Ajax untuk membangun tim yang kompetitif dan bisa bersaing di level tertinggi Eropa.</p>
+
+            <p>Kepergian ten Hag dari Manchester United menjadi momen yang penuh drama setelah periode yang penuh tantangan. Kini, kembali ke Ajax mungkin memberikan ten Hag kesempatan untuk membuktikan bahwa dia masih memiliki kemampuan untuk membangun proyek yang sukses.</p>
+
+            <p>Ajax juga menghadapi tantangan besar dalam memulihkan posisi mereka di Liga Belanda setelah beberapa musim yang kurang memuaskan. Kehadiran ten Hag dipercaya bisa memberikan dampak positif dalam struktur dan strategi permainan Ajax ke depannya.</p>
+
+            <p>Jika negosiasi berhasil, ten Hag akan menjalani kesempatan kedua untuk membangun Ajax menjadi kekuatan dominan di sepak bola Eropa, seperti yang dia lakukan pada mandat pertamanya. Fans Ajax sudah menantikan kepastian mengenai masa depan klub mereka.</p>
         `,
     }
 };

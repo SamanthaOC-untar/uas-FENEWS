@@ -89,6 +89,9 @@ export function Header() {
           <Link href="/" className={styles.navLink}>
             Home
           </Link>
+          <Link href="/olahraga" className={styles.navLink}>
+            Olahraga
+          </Link>
           <Link href="/aboutus" className={styles.navLink}>
             About Us
           </Link>
