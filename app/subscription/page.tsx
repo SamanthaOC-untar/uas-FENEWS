@@ -168,15 +168,52 @@ export default function SubscriptionPage() {
       {currentSubscription && (
         <Row className="mb-5">
           <Col lg={12}>
-            <Alert variant="info">
-              <strong>Status Langganan Aktif</strong>
-              <br />
-              Paket: <strong>{currentSubscription.plan === 'MONTHLY' ? 'Bulanan' : 'Tahunan'}</strong>
-              <br />
-              Harga: <strong>{formatRupiah(currentSubscription.priceInRupiah)}</strong>
-              <br />
-              Berlaku hingga: <strong>{new Date(currentSubscription.endDate).toLocaleDateString('id-ID')}</strong>
-            </Alert>
+            <Card className={styles.activeSubscriptionCard}>
+              <Card.Body className={styles.activeSubscriptionBody}>
+                <div className={styles.subscriptionHeader}>
+                  <div className={styles.statusBadge}>
+                    <span className={styles.statusIcon}>✓</span>
+                    <span className={styles.statusText}>Langganan Aktif</span>
+                  </div>
+                </div>
+
+                <div className={styles.subscriptionDetails}>
+                  <div className={styles.detailItem}>
+                    <span className={styles.detailLabel}>📦 Paket</span>
+                    <span className={styles.detailValue}>
+                      {currentSubscription.plan === 'MONTHLY' ? 'Bulanan' : 'Tahunan'}
+                    </span>
+                  </div>
+
+                  <div className={styles.detailItem}>
+                    <span className={styles.detailLabel}>💰 Harga</span>
+                    <span className={styles.detailValue}>
+                      {formatRupiah(currentSubscription.priceInRupiah)}
+                    </span>
+                  </div>
+
+                  <div className={styles.detailItem}>
+                    <span className={styles.detailLabel}>📅 Berlaku Hingga</span>
+                    <span className={styles.detailValue}>
+                      {new Date(currentSubscription.endDate).toLocaleDateString('id-ID', {
+                        weekday: 'long',
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
+                      })}
+                    </span>
+                  </div>
+                </div>
+
+                <Button 
+                  variant="outline-secondary" 
+                  size="sm"
+                  className={styles.renewBtn}
+                >
+                  Perpanjang Paket
+                </Button>
+              </Card.Body>
+            </Card>
           </Col>
         </Row>
       )}
